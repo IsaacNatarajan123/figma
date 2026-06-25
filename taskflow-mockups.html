@@ -125,7 +125,7 @@ function Login({go}){
           <h1 style={{margin:"0 0 6px",fontSize:24,fontWeight:800,letterSpacing:"-0.03em"}}>Welcome back</h1>
           <p style={{margin:0,color:T.textSecondary,fontSize:14}}>Sign in to your TaskFlow workspace</p>
         </div>
-        <Field label="Email" type="email" placeholder="you@company.com" value={e} onChange={ev=>setE(ev.target.value)}/>
+        <Field label="Email" type="email" placeholder="you@gmail.com" value={e} onChange={ev=>setE(ev.target.value)}/>
         <div style={{marginBottom:18}}>
           <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:6}}>
             <label style={labelStyle}>Password</label>
@@ -153,8 +153,8 @@ function Signup({go}){
           <h1 style={{margin:"0 0 6px",fontSize:24,fontWeight:800,letterSpacing:"-0.03em"}}>Create your account</h1>
           <p style={{margin:0,color:T.textSecondary,fontSize:14}}>Start managing projects in minutes</p>
         </div>
-        <Field label="Full name" placeholder="Alex Johnson" value={n} onChange={ev=>setN(ev.target.value)}/>
-        <Field label="Work email" type="email" placeholder="you@company.com" value={e} onChange={ev=>setE(ev.target.value)}/>
+        <Field label="Full name" placeholder="Full name" value={n} onChange={ev=>setN(ev.target.value)}/>
+        <Field label="Work email" type="email" placeholder="you@email.com" value={e} onChange={ev=>setE(ev.target.value)}/>
         <Field label="Password" type="password" placeholder="Min. 8 characters" value={p} onChange={ev=>setP(ev.target.value)}/>
         <button style={btnPrimary} onClick={()=>go(3)}>Create account</button>
         <p style={{textAlign:"center",marginTop:20,color:T.textSecondary,fontSize:13}}>
